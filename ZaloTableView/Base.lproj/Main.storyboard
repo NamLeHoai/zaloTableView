@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZaloTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hCG-E5-QHr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hCG-E5-QHr" secondAttribute="bottom" id="fVk-Vg-CEX"/>
+                            <constraint firstItem="hCG-E5-QHr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gH8-mm-vf0"/>
+                            <constraint firstItem="hCG-E5-QHr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i0g-ZR-7Ew"/>
+                            <constraint firstItem="hCG-E5-QHr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rGm-vy-jY4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hCG-E5-QHr" id="WvK-mT-yde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="118"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="Oiu-TH-p1R">
+            <objects>
+                <viewController id="JeR-B2-Fig" customClass="ContactViewController" customModule="ZaloTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VNq-CO-zot">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fmq-S0-ugu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fmq-S0-ugu" firstAttribute="top" secondItem="VNq-CO-zot" secondAttribute="top" id="5cb-By-8sx"/>
+                            <constraint firstItem="Fmq-S0-ugu" firstAttribute="trailing" secondItem="hfE-gh-nF0" secondAttribute="trailing" id="ZNZ-lg-m9Y"/>
+                            <constraint firstAttribute="bottom" secondItem="Fmq-S0-ugu" secondAttribute="bottom" id="vxG-kY-ZIg"/>
+                            <constraint firstItem="Fmq-S0-ugu" firstAttribute="leading" secondItem="hfE-gh-nF0" secondAttribute="leading" id="wTM-4E-dr9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfE-gh-nF0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkh-ba-YfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.55072463768124" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
